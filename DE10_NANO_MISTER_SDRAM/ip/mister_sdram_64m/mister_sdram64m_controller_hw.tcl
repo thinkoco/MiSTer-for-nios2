@@ -23,7 +23,7 @@ set_module_property NAME mister_sdram64m_controller
 set_module_property VERSION 1.0
 set_module_property INTERNAL false
 set_module_property OPAQUE_ADDRESS_MAP true
-set_module_property GROUP Mister
+set_module_property GROUP OpenIO/Mister
 set_module_property AUTHOR ""
 set_module_property DISPLAY_NAME mister_sdram64m_controller
 set_module_property INSTANTIATE_IN_SYSTEM_MODULE true
@@ -118,7 +118,7 @@ add_interface_port za za_data readdata Output 16
 add_interface_port za az_cs chipselect Input 1
 add_interface_port za az_be_n byteenable_n Input 2
 set_interface_assignment za embeddedsw.configuration.isFlash 0
-set_interface_assignment za embeddedsw.configuration.isMemoryDevice 0
+set_interface_assignment za embeddedsw.configuration.isMemoryDevice 1
 set_interface_assignment za embeddedsw.configuration.isNonVolatileStorage 0
 set_interface_assignment za embeddedsw.configuration.isPrintableDevice 0
 
